@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAdbEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:text="ADB_Enable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUSBStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="USB_Status"
+        app:layout_constraintLeft_toLeftOf="@+id/tvAdbEnable"
+        app:layout_constraintTop_toTopOf="@+id/tvAdbEnable" />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchADB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAdbEnable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAdbEnable" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchADB"
+        app:layout_constraintStart_toEndOf="@+id/switchADB"
+        app:layout_constraintTop_toTopOf="@+id/switchADB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchADB"
+        app:layout_constraintEnd_toStartOf="@+id/switchADB"
+        app:layout_constraintTop_toTopOf="@+id/switchADB" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchUSB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUSBStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvUSBStatus" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Host"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchUSB"
+        app:layout_constraintStart_toEndOf="@+id/switchUSB"
+        app:layout_constraintTop_toTopOf="@+id/switchUSB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gadget"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchUSB"
+        app:layout_constraintEnd_toStartOf="@+id/switchUSB"
+        app:layout_constraintTop_toTopOf="@+id/switchUSB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
