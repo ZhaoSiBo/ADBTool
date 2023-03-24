@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="24dp"
+        android:textSize="24sp"
         android:text="ADB_Enable"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:text="USB_Status"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="@+id/tvAdbEnable"
         app:layout_constraintTop_toTopOf="@+id/tvAdbEnable" />
 
@@ -66,7 +68,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Host"
+        android:text="Gadget"
         android:layout_marginStart="4dp"
         app:layout_constraintBottom_toBottomOf="@+id/switchUSB"
         app:layout_constraintStart_toEndOf="@+id/switchUSB"
@@ -75,10 +77,27 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="gadget"
+        android:text="Host"
         android:layout_marginEnd="4dp"
         app:layout_constraintBottom_toBottomOf="@+id/switchUSB"
         app:layout_constraintEnd_toStartOf="@+id/switchUSB"
         app:layout_constraintTop_toTopOf="@+id/switchUSB" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUSBStatus"
+        android:layout_marginTop="24dp"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:background="@color/black"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
